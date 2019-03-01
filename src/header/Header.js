@@ -3,7 +3,7 @@ import Types from "prop-types";
 
 import "./Header.less";
 
-const Header = ({locale}) => (<header className="navbar navbar-inverse navbar-static-top bg-primary subnav" id="top" role="banner">
+const Header = ({locale}) => (<header className="navbar navbar-inverse navbar-static-top bg-primary subnav" role="banner">
   <div className="container">
     <div className="navbar-header pull-xs-left">
       <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">

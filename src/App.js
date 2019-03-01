@@ -17,15 +17,12 @@ class App extends Component {
   render() {
     return (
       <StrictMode>
-        <Header/>
-        <div className="doc">
+
+        <div className="doc" id="top">
           <a href="#top" className="doc-go-top">Go to top</a>
           <header className="wrap--content section">
           <h1 className="display-4 colored-dot">Thalassa</h1>
           <p className="lead">CSS library</p>
-          <span className="badge badge-success">TL</span> Thalassa component
-          <span className="badge badge-primary m-l-2">BT</span> Bootstrap component
-          <span className="badge m-l-2">WIP</span> Work in progress
           </header>
           <ComponentList/>
           <Core/>
@@ -34,6 +31,7 @@ class App extends Component {
           <Grid/>
           <Wrap/>
           <Background/>
+          <Header/>
           <Badge/>
           <Table/>
           <Spacing/>
