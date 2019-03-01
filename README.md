@@ -1,16 +1,20 @@
 # Thalassa
 
-### CSS library as part of the Neptune Design System
+## CSS library as part of the Neptune Design System
 (POC. WIP)
 
-Available components:
+### Available components:
 
+#### New
 - Skew
 - Grid layout
 - Flexbox layout
 - Wrapping
 - Background
 - Spacing
+
+#### From bootstrap
+- Badge
 
 ## Open the library
 
