@@ -1,76 +1,68 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const postcssPresetEnv = require("postcss-preset-env");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const postcssPresetEnv = require('postcss-preset-env');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: "development",
-  devtool: "source-map",
-  entry: "./docs",
+  mode: 'development',
+  devtool: 'source-map',
+  entry: './docs',
   output: {
-    path: __dirname + "./dist",
+    path: `${__dirname}./dist`,
   },
   module: {
     rules: [{
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+      },
+    },
+    {
+      test: /\.less$/,
+      use: [{
+        loader: 'style-loader',
       },
       {
-        test: /\.less$/,
-        use: [{
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: "postcss-loader",
-            options: {
-              ident: "postcss",
-              plugins: () => [
-                postcssPresetEnv({
-                  stage: 3,
-                  features: {
-                    "custom-media-queries": true
-                  }
-                })
-              ]
-            }
-          },
-          {
-            loader: "less-loader"
-          }
-        ]
+        loader: 'css-loader',
       },
       {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ]
+        loader: 'postcss-loader',
+        options: {
+          ident: 'postcss',
+          plugins: () => [
+            postcssPresetEnv({
+              stage: 3,
+              features: {
+                'custom-media-queries': true,
+              },
+            }),
+          ],
+        },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|png|jpg|gif|svg|mp4)/,
-        loader: "file-loader"
-      }
-    ]
+        loader: 'less-loader',
+      },
+      ],
+    },
+    {
+      test: /\.css$/,
+      use: [
+        MiniCssExtractPlugin.loader,
+        'css-loader',
+      ],
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|png|jpg|gif|svg|mp4)/,
+      loader: 'file-loader',
+    },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./docs/index.html"
+      template: './docs/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: "style.css",
-    })
+      filename: 'style.css',
+    }),
   ],
-  devServer: {
-    proxy: [{
-      target: 'http://localhost:8080',
-      secure: false,
-      changeOrigin: true,
-    }, ],
-    historyApiFallback: true,
-  },
 };
