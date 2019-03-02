@@ -16,10 +16,16 @@
 #### From bootstrap
 - Badge
 
-## Open the library
 
-Clone the project and run in the project directory:
+## Open the library to see the demo and documentation
+
+Clone and run in the project directory:
 
 `npm install`
 
 `npm run start`
+
+
+## Consume CSS files
+
+`npm install --save-dev  transferwise/thalassa#master`

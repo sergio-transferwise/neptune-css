@@ -18,7 +18,9 @@
     "name": "TransferWise",
     "url": "https://transferwise.com/"
   },
-  "contributors": [],
+  "contributors": [
+    "Naiara Abaroa <naiara.abaroa@transferwise.com>"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/transferwise/thalassa/issues"
