@@ -15,22 +15,6 @@ jobs:
           root: .
           paths:
             - '*'
-  deploy-docs-to-root:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run:
-          name: Build docs
-          command: npm run build-storybook
-      - run:
-          name: Deploy docs
-          command: |
-            mkdir ~/.ssh
-            ssh-keyscan github.com >> ~/.ssh/known_hosts
-            git config --global user.email "circleci@transferwise.com"
-            git config --global user.name "CircleCI"
-            npm run deploy-docs
   deploy-docs-for-branch:
     <<: *defaults
     steps:
@@ -59,6 +43,8 @@ workflows:
                 - gh-pages
                 - master
       - deploy-docs-for-branch:
+          requires:
+            - build
           filters:
             branches:
               ignore:
