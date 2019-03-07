@@ -34,7 +34,7 @@ jobs:
 
 workflows:
   version: 2
-  build-test-release-and-build-docs:
+  build-release-and-build-docs:
     jobs:
       - build:
           filters:
@@ -43,6 +43,7 @@ workflows:
                 - gh-pages
                 - master
       - deploy-docs-for-branch:
+          context: frontend-publish
           requires:
             - build
           filters:
