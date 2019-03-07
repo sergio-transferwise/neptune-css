@@ -23,7 +23,7 @@ Clone and run in the project directory:
 
 `npm install`
 
-`npm run start`
+`npm run storybook`
 
 
 ## Consume CSS files
