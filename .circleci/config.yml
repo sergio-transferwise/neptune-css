@@ -1,0 +1,66 @@
+defaults: &defaults
+  working_directory: ~/thalassa
+  docker:
+    - image: circleci/node:10.6-browsers
+version: 2
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - persist_to_workspace:
+          root: .
+          paths:
+            - '*'
+  deploy-docs-to-root:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Build docs
+          command: npm run build-storybook
+      - run:
+          name: Deploy docs
+          command: |
+            mkdir ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            git config --global user.email "circleci@transferwise.com"
+            git config --global user.name "CircleCI"
+            npm run deploy-docs
+  deploy-docs-for-branch:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Build docs
+          command: npm run build-storybook
+      - run:
+          name: Deploy docs
+          command: |
+            mkdir ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            git config --global user.email "circleci@transferwise.com"
+            git config --global user.name "CircleCI"
+            npm run deploy-docs-for-branch
+
+workflows:
+  version: 2
+  build-test-release-and-build-docs:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+                - master
+      - deploy-docs-for-branch:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+                - master
