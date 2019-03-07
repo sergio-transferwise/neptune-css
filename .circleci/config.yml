@@ -43,7 +43,6 @@ workflows:
                 - gh-pages
                 - master
       - deploy-docs-for-branch:
-          context: frontend-publish
           requires:
             - build
           filters:
