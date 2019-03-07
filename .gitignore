@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /build
+/docs-build
 /.pnp
 .pnp.js
 messages.*.json

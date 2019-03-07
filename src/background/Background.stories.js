@@ -6,7 +6,7 @@ import "./Background.less";
 storiesOf("Background", module).add("default", () => (
   <section id="background" className="section">
     <h1 className="wrap--content">
-      Background <span className="badge badge-success">new</span>
+      Backgrounda <span className="badge badge-success">new</span>
     </h1>
     <section className="bg--light doc-section doc-block">
       <h2 className="wrap--content">.bg--light</h2>
