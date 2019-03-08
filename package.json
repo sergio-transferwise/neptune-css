@@ -1,14 +1,21 @@
 {
-  "name": "@transferwise/triton",
+  "name": "@transferwise/thalassa",
   "version": "1.0.0",
-  "description": "TransferWise style-guide molecules in react",
-  "license": "MIT",
+  "private": true,
+  "description": "",
   "main": "./build/main.js",
   "repository": {
-    "fullname": "transferwise/triton",
+    "fullname": "transferwise/thalassa",
     "type": "git",
-    "url": "git+https://github.com/transferwise/triton.git"
+    "url": "git+https://github.com/transferwise/thalassa.git"
   },
+  "author": {
+    "name": "TransferWise",
+    "url": "https://transferwise.com/"
+  },
+  "contributors": [
+    "Naiara Abaroa <naiara.abaroa@transferwise.com>"
+  ],
   "dependencies": {
     "@transferwise/public-navigation": "^2.9.0",
     "bootstrap": "github:transferwise/bootstrap",
@@ -81,6 +88,9 @@
     "react-dom": "^16.7.0"
   },
   "scripts": {
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint *.js src/**/*.js",
+    "lint:css": "stylelint 'src/**/*.{css,scss}'",
     "build": "node scripts/build.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o docs-build",
