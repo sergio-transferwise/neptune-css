@@ -82,10 +82,10 @@
     "gh-pages": "^0.12.0"
   },
   "peerDependencies": {
-    "react": "^16.8.2",
+    "react": "^16.3.2",
     "react-app-polyfill": "^0.2.0",
     "react-dev-utils": "^7.0.1",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.3.2"
   },
   "scripts": {
     "lint": "npm run lint:js && npm run lint:css",
