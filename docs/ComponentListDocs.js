@@ -31,6 +31,10 @@ import React from "react";
               <a href="#spacing">Spacing</a>
               <small> 9 KB</small>
             </li>
+            <li>
+              <a href="#spacing">Carousel</a>
+              <small> 6 KB</small>
+            </li>
           </ul>
         </div>
         <div>
