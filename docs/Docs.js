@@ -18,23 +18,23 @@ import "../build/background.css";
 import "../build/columns.css";
 
 import { PublicNavigation, Footer } from "@transferwise/public-navigation";
-import Core from "./coreDocs";
-import ComponentList from "./componentListDocs";
+import Core from "./CoreDocs";
+import ComponentList from "./ComponentListDocs";
 import Badge from "./BadgeDocs";
 import Buttons from "./ButtonsDocs";
 import Circles from "./CirclesDocs";
 import Carousel from "./CarouselDocs";
 import Forms from "./FormsDocs";
-import Grid from "./gridDocs";
-import Columns from "./columnsDocs";
-import Wrap from "./wrapDocs";
-import Skew from "./skewDocs";
-import Flex from "./flexDocs";
-import Media from "./mediaDocs";
-import Background from "./backgroundDocs";
+import Grid from "./GridDocs";
+import Columns from "./ColumnsDocs";
+import Wrap from "./WrapDocs";
+import Skew from "./SkewDocs";
+import Flex from "./FlexDocs";
+import Media from "./MediaDocs";
+import Background from "./BackgroundDocs";
 
-import Table from "./tableDocs";
-import Spacing from "./spacingDocs";
+import Table from "./TableDocs";
+import Spacing from "./SpacingDocs";
 import Header from "./HeaderDocs";
 
 const Docs = () => (
