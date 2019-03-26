@@ -45,7 +45,6 @@ const ComponentList = () => (
             <a href="#circles">Circles</a>
             <small> 4 KB</small>
           </li>
-
           <li>
             <a href="#carousel">Carousel</a>
             <small> 6 KB</small>
@@ -129,17 +128,14 @@ const ComponentList = () => (
         <h3>Forms</h3>
         <ul className="doc-list">
           <li>
-            <a href="#forms">Forms</a>
             <ul className="doc-list">
               <li>
                 <a href="#forms">Forms</a>
                 <small> 28 KB</small>
               </li>
               <li>
-                <li>
-                  <a href="#buttons">Buttons</a>
-                  <small> 30 KB</small>
-                </li>
+                <a href="#buttons">Buttons</a>
+                <small> 30 KB</small>
               </li>
             </ul>
           </li>
