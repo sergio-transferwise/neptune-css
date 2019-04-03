@@ -1,6 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const StringReplacePlugin = require("string-replace-webpack-plugin");
 const paths = require("./paths");
 const fs = require("fs");
 const path = require("path");
@@ -21,8 +20,7 @@ module.exports = function(mode, entries) {
         // both options are optional
         filename: "css/[name].css",
         chunkFilename: "css/[id].css"
-      }),
-      new StringReplacePlugin()
+      })
     ],
     module: {
       rules: [

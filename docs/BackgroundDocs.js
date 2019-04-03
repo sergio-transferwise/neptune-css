@@ -12,7 +12,7 @@ const Background = () => (
       <h2 className="container--wide p-t-4">.bg--light</h2>
     </section>
     <section className="bg bg--dark doc-section">
-      <h2 className="container--wide">.bg--dark</h2>
+      <h2 className="container--wide text-inverse p-t-4">.bg--dark</h2>
     </section>
   </section>
 );

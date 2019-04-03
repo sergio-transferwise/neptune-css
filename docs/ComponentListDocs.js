@@ -98,7 +98,7 @@ const ComponentList = () => (
           </li>
           <li>
             <a href="#background">Background</a>
-            <small> 1 KB</small>
+            <small> 4 KB</small>
             <span className="badge m-l-1">beta</span>
           </li>
         </ul>
