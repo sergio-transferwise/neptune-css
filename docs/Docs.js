@@ -7,26 +7,7 @@ import './less/prism.css';
 
 import '@transferwise/public-navigation/dist/public-navigation.css';
 
-import '../build/css/alerts.css';
-import '../build/css/badge.css';
-import '../build/css/breadcrumbs.css';
-import '../build/css/buttons.css';
-import '../build/css/carousel.css';
-import '../build/css/circles.css';
-import '../build/css/circle-backgrounds.css';
-import '../build/css/var-color.css';
-import '../build/css/core.css';
-import '../build/css/flex.css';
-import '../build/css/grid.css';
-import '../build/css/footer.css';
-import '../build/css/media.css';
-import '../build/css/skew.css';
-import '../build/css/spacing.css';
-import '../build/css/table.css';
-import '../build/css/container.css';
-import '../build/css/header.css';
-import '../build/css/background.css';
-import '../build/css/columns.css';
+import '../bundles/neptune';
 
 import { PublicNavigation } from '@transferwise/public-navigation';
 import Alerts from './AlertsDocs';
