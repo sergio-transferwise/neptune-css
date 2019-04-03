@@ -1,1 +1,1 @@
-import '../src/less/columns/Columns.less';
+import '../src/less/_columns.less';

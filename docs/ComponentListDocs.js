@@ -154,7 +154,7 @@ const ComponentList = () => (
         <h3>All the library</h3>
         <ul className="doc-list">
           <li>
-            <a href="">Thalassa</a>
+            <a href="">Neptune CSS</a>
             <small> 159 KB</small>
             <span className="badge m-l-1">beta</span>
           </li>

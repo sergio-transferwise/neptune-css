@@ -1,1 +1,1 @@
-import '../src/less/flex/Flex.less';
+import '../src/less/_flex.less';
