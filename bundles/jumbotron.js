@@ -1,1 +1,1 @@
-import '../src/less/_jumbotron.less';
+import '../src/less/jumbotron.less';

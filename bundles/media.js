@@ -1,1 +1,1 @@
-import '../src/less/_media.less';
+import '../src/less/media.less';

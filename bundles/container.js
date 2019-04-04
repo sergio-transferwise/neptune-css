@@ -1,1 +1,1 @@
-import '../src/less/_container.less';
+import '../src/less/container.less';

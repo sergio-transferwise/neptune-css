@@ -1,1 +1,1 @@
-import '../src/less/_breadcrumbs.less';
+import '../src/less/breadcrumbs.less';

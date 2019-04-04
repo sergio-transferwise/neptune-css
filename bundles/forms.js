@@ -1,1 +1,1 @@
-import '../src/less/_forms.less';
+import '../src/less/forms.less';

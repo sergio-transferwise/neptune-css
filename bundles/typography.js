@@ -1,1 +1,1 @@
-import '../src/less/_typography.less';
+import '../src/less/typography.less';

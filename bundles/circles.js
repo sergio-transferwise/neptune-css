@@ -1,1 +1,1 @@
-import '../src/less/_circles.less';
+import '../src/less/circles.less';

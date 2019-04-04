@@ -1,1 +1,1 @@
-import '../src/less/_footer.less';
+import '../src/less/footer.less';

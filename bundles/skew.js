@@ -1,1 +1,1 @@
-import '../src/less/_skew.less';
+import '../src/less/skew.less';

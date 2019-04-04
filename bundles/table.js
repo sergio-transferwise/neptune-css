@@ -1,1 +1,1 @@
-import '../src/less/_table.less';
+import '../src/less/table.less';

@@ -1,1 +1,1 @@
-import '../src/less/_sequences.less';
+import '../src/less/sequences.less';

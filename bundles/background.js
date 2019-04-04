@@ -1,1 +1,1 @@
-import '../src/less/_background.less';
+import '../src/less/background.less';

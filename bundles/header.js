@@ -1,1 +1,1 @@
-import '../src/less/_header.less';
+import '../src/less/header.less';

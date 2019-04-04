@@ -1,1 +1,1 @@
-import '../src/less/_alerts.less';
+import '../src/less/alerts.less';
