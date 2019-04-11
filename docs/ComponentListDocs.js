@@ -50,6 +50,10 @@ const ComponentList = () => (
             <small> 6 KB</small>
           </li>
           <li>
+            <a href="#navbar">Navbar</a>
+            <small> 54 KB</small>
+          </li>
+          <li>
             <a href="#footer">Footer</a>
             <small> 1 KB</small>
           </li>
@@ -83,6 +87,10 @@ const ComponentList = () => (
       <div>
         <h3>Utilities</h3>
         <ul className="doc-list">
+          <li>
+            <a href="#utilities">Utilities</a>
+            <small> 1 KB</small>
+          </li>
           <li>
             <a href="#spacing">Spacing</a>
             <small> 9 KB</small>
@@ -142,16 +150,27 @@ const ComponentList = () => (
         </ul>
       </div>
       <div>
-        <h3>Header / navbar</h3>
+        <h3>Public navigation</h3>
         <ul className="doc-list">
           <li>
-            <a href="#navbar">Navbar</a>
+            <a href="#publicNavigation">PublicNavigation</a>
             <small> 53 KB</small>
+            <ul>
+              <li>
+                <a href="#navbar">Navbar</a>
+                <small> 53 KB</small>
+              </li>
+              <li>
+                <a href="#publicNavigation">Public Navigation</a>
+                <small> 7 KB</small>
+              </li>
+              <li>
+                <a href="#utilities">Utilities</a>
+                <small> 1 KB</small>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#navbar">Public Navigation</a>
-            <small> 7 KB</small>
-          </li>
+
         </ul>
       </div>
       <div>

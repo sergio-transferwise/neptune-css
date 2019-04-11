@@ -12,7 +12,7 @@ import './flex';
 import './footer';
 import './forms';
 import './grid';
-import './header';
+import './navbar';
 import './loaders';
 import './media';
 import './public-navigation';

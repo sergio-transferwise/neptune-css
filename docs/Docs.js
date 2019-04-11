@@ -9,7 +9,8 @@ import './less/prism.css';
 
 import '../bundles/neptune';
 
-import HeaderDoc from './HeaderDocs';
+import NavbarDoc from './NavbarDocs';
+import PublicNavigationDoc from './PublicNavigationDocs';
 import Alerts from './AlertsDocs';
 import Core from './CoreDocs';
 import ComponentList from './ComponentListDocs';
@@ -29,6 +30,7 @@ import Skew from './SkewDocs';
 import Flex from './FlexDocs';
 import Media from './MediaDocs';
 import Background from './BackgroundDocs';
+import Utilities from './UtilitiesDocs';
 
 import Table from './TableDocs';
 import Spacing from './SpacingDocs';
@@ -51,7 +53,8 @@ const Docs = () => (
         <p className="lead">CSS library</p>
         <Refractor
           language="javascript"
-          value={`import "~neptune-css/build/css/[component].css";`} />
+          value={`import "~neptune-css/build/css/[component].css";`}
+        />
       </header>
       <ComponentList />
       <Color />
@@ -73,7 +76,9 @@ const Docs = () => (
       <Grid />
       <Container />
       <Background />
-      <HeaderDoc />
+      <Utilities />
+      <NavbarDoc />
+      <PublicNavigationDoc />
       <FooterDoc />
     </div>
   </StrictMode>
