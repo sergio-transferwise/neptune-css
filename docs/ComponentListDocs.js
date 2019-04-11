@@ -148,6 +148,10 @@ const ComponentList = () => (
             <a href="#navbar">Navbar</a>
             <small> 53 KB</small>
           </li>
+          <li>
+            <a href="#navbar">Public Navigation</a>
+            <small> 7 KB</small>
+          </li>
         </ul>
       </div>
       <div>

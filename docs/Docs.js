@@ -5,11 +5,11 @@ import Refractor from 'react-refractor';
 import javascript from 'refractor/lang/javascript';
 import './less/prism.css';
 
-import '@transferwise/public-navigation/dist/public-navigation.css';
+// import '@transferwise/public-navigation/dist/public-navigation.css';
 
 import '../bundles/neptune';
 
-import { PublicNavigation } from '@transferwise/public-navigation';
+import HeaderDoc from './HeaderDocs';
 import Alerts from './AlertsDocs';
 import Core from './CoreDocs';
 import ComponentList from './ComponentListDocs';
@@ -32,7 +32,6 @@ import Background from './BackgroundDocs';
 
 import Table from './TableDocs';
 import Spacing from './SpacingDocs';
-import Header from './HeaderDocs';
 
 const Docs = () => (
   <StrictMode>
@@ -74,7 +73,7 @@ const Docs = () => (
       <Grid />
       <Container />
       <Background />
-      <Header />
+      <HeaderDoc />
       <FooterDoc />
     </div>
   </StrictMode>
