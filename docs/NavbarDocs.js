@@ -13,8 +13,8 @@ const HeaderDoc = () => (
       </svg>
     </a>
     <div className="container--wide">
-      <h1 className="colored-dot p-sticky doc-section__title">Navbar</h1>
-      <ul className="nav doc-colums--4">
+      <h1 className="colored-dot doc-section__title">Navbar</h1>
+      <ul className="nav doc-colums--4 m-b-4">
         <li className=""><a href="#navbar-default">Default navbar</a></li>
         <li className="active"><a href="#navbar-brand-image">Brand image</a></li>
         <li><a href="#navbar-forms">Forms</a></li>
@@ -29,7 +29,7 @@ const HeaderDoc = () => (
         <li><a href="#navbar-nested">Nested navbar</a></li>
         <li><a href="#navbar-secondary">Secondary navbar</a></li>
       </ul>
-      <h2>Default navbar</h2>
+      <h2 className="doc-section__subtitle">Default navbar</h2>
       <p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
 
       <p><strong className="text-danger">Justified navbar nav links are currently not supported.</strong></p>
@@ -219,7 +219,7 @@ Dropdown
 </nav>
          `}
       />
-      <h2 id="navbar-brand-image">Brand image</h2>
+      <h2 className="doc-section__subtitle" id="navbar-brand-image">Brand image</h2>
       <p>
 Replace the navbar brand with your own image by swapping the text for an
         <code>&lt;img&gt;</code>

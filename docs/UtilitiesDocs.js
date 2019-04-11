@@ -6,7 +6,7 @@ import './less/prism.css';
 
 const Utilities = () => (
   <section id="utilities" className="container--wide section">
-    <h1 className="colored-dot">Utilities</h1>
+    <h1 className="colored-dot doc-section__title">Utilities</h1>
 
 
     <Refractor
