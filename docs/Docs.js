@@ -15,6 +15,7 @@ import Core from './CoreDocs';
 import ComponentList from './ComponentListDocs';
 import Breadcrumbs from './BreadcrumbsDocs';
 import Badge from './BadgeDocs';
+import Blocks from './BlocksDocs';
 import Buttons from './ButtonsDocs';
 import Circles from './CirclesDocs';
 import CircleBackgrounds from './CircleBackgroundsDocs';
@@ -61,6 +62,7 @@ const Docs = () => (
       <CircleBackgrounds />
       <Alerts />
       <Badge />
+      <Blocks />
       <Breadcrumbs />
       <Buttons />
       <Carousel />

@@ -30,6 +30,10 @@ const ComponentList = () => (
             <small> 703 bytes</small>
           </li>
           <li>
+            <a href="#blocks">Blocks</a>
+            <small> 703 bytes</small>
+          </li>
+          <li>
             <a href="#breadcrumbs">Breadcrumbs</a>
             <small> 240 bytes</small>
           </li>

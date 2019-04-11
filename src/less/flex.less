@@ -23,3 +23,39 @@
 @media (min-width: @screen-xl-min) {
   .flex-properties(--xl);
 }
+
+/* Items */
+
+.flex__item {
+  padding-right: calc(var(--spacer) * 2);
+  padding-left: calc(var(--spacer) * 2);
+
+  @media all and (min-width: @screen-sm) {
+    padding-right: calc(var(--spacer) * 3);
+    padding-left: calc(var(--spacer) * 3);
+  }
+
+  @media all and (min-width: @screen-md) {
+    padding-right: calc(var(--spacer) * 4);
+    padding-left: calc(var(--spacer) * 4);
+  }
+
+  @media all and (min-width: @screen-lg) {
+    padding-right: calc(var(--spacer) * 6);
+    padding-left: calc(var(--spacer) * 6);
+  }
+}
+
+.flex__item--1-1 {
+  @media all and (min-width: @screen-md) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  &--md {
+    @media all and (max-width: @screen-md) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+}
