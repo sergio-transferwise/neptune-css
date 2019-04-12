@@ -1,1 +1,1 @@
-import '../src/less/publicNavigation/publicNavigation.less';
+import '../src/less/public-navigation/public-navigation.less';

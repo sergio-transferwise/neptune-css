@@ -2,7 +2,7 @@ import React from 'react';
 
 const ComponentList = () => (
   <section className="container--wide">
-    <h2 className=" doc-section__title">Individual CSS files</h2>
+    <h2 className="doc-section__title">Individual CSS files</h2>
     <div className="d-flex justify-content-between">
       <div>
         <h3>Foundations</h3>
@@ -153,7 +153,7 @@ const ComponentList = () => (
         <h3>Public navigation</h3>
         <ul className="doc-list">
           <li>
-            <a href="#publicNavigation">PublicNavigation</a>
+            <a href="#publicNavigation">Public Navigation</a>
             <small> 53 KB</small>
             <ul>
               <li>
