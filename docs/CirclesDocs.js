@@ -1,7 +1,7 @@
 import React from "react";
 
 const Circles = () => (
-  <section id="circles" className="container--wide section">
+  <section id="circles" className="container container--wide section">
     <h1 className="colored-dot doc-section__title">
           Circles
     </h1>

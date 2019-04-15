@@ -171,7 +171,7 @@ const style = {
 };
 
 const Color = () => (
-  <section id="color" className="container--wide section">
+  <section id="color" className="container container--wide section">
     <h1 className="colored-dot doc-section__title">Color</h1>
     <h2 className="doc-section__subtitle">Color mapping</h2>
     <p>Gray and brand colors for use across the Design system.</p>

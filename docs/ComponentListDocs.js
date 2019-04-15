@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ComponentList = () => (
-  <section className="container--wide">
+  <section className="container container--wide">
     <h2 className="doc-section__title">Individual CSS files</h2>
     <div className="d-flex justify-content-between">
       <div>

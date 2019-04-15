@@ -3,7 +3,7 @@ import Typography from './TypographyDocs';
 
 const Core = () => (
   <div>
-    <section id="core" className="container--wide section p-b-0">
+    <section id="core" className="container container--wide section p-b-0">
       <h1 className="colored-dot doc-section__title">
             Core
       </h1>

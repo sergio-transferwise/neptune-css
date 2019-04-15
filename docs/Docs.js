@@ -46,8 +46,8 @@ const Docs = () => (
           />
         </svg>
       </a>
-      <header className="container--wide section">
-        <h1 className="display-4 colored-dot">Neptune CSS</h1>
+      <header className="container container--wide section">
+        <h1 className="display-4 colored-dot">Neptune CSS.</h1>
         <p className="lead">CSS library</p>
         <Refractor
           language="javascript"

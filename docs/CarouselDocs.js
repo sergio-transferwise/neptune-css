@@ -8,7 +8,7 @@ import './less/prism.css';
 
 const Carousel = () => (
   <section id="carousel" className="section">
-    <div className="container--wide">
+    <div className="container container--wide">
       <h1 className="colored-dot doc-section__title">
       Carousel
       </h1>
@@ -453,7 +453,7 @@ I live abroad &amp; also have my connection back to India by sending money to my
         </ol>
       </div>
     </div>
-    <div className="container--wide">
+    <div className="container container--wide">
       <Refractor
         language="markup"
         value={`

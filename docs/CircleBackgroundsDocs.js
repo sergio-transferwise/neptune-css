@@ -6,7 +6,7 @@ import './less/prism.css';
 
 
 const CircleBarckgrounds = () => (
-  <section id="circle-backgrounds" className="container--wide section">
+  <section id="circle-backgrounds" className="container container--wide section">
     <h1 className="colored-dot doc-section__title doc-h1">
           Circle Backgrounds
     </h1>

@@ -4,7 +4,7 @@ import Refractor from 'react-refractor';
 import './less/prism.css';
 
 const Badge = () => (
-  <section id="badge" className="container--wide section">
+  <section id="badge" className="container container--wide section">
     <h1 className="colored-dot doc-section__title">Badge</h1>
     <p className="lead">703 bytes</p>
     <p className="lead">

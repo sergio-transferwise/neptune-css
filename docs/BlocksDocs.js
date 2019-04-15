@@ -6,7 +6,7 @@ import javascript from 'refractor/lang/javascript';
 import './less/prism.css';
 
 const Blocks = () => (
-  <section id="blocks" className="container--wide section">
+  <section id="blocks" className="container container--wide section">
     <h1 className="colored-dot">Blocks.</h1>
     <p className="lead">703 bytes</p>
     <p className="lead">

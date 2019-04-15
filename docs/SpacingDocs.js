@@ -6,7 +6,7 @@ import css from 'refractor/lang/css';
 import './less/prism.css';
 
 const Spacing = () => (
-  <section id="spacing" className="container--wide">
+  <section id="spacing" className="container container--wide">
     <h1 className="colored-dot  doc-section__title doc-h1">
       Spacing
     </h1>

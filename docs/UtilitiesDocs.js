@@ -5,7 +5,7 @@ import markup from 'refractor/lang/markup';
 import './less/prism.css';
 
 const Utilities = () => (
-  <section id="utilities" className="container--wide section">
+  <section id="utilities" className="container container--wide section">
     <h1 className="colored-dot doc-section__title">Utilities</h1>
 
 

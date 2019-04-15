@@ -7,7 +7,7 @@ import './less/prism.css';
 
 const PublicNavigationDoc = () => (
   <section id="publicNavigation" className="section">
-    <div className="container--wide">
+    <div className="container container--wide">
       <h1 className="colored-dot doc-section__title">Public Navigation</h1>
       <p>
       Based on React component &nbsp;
