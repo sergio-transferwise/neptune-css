@@ -4,7 +4,7 @@ import { Footer } from '@transferwise/public-navigation';
 const FooterDoc = () => (
   <section id="footer">
     <div className="container container--wide section">
-      <h1 className="colored-dot doc-section__title">Footer</h1>
+      <h1 className="colored-dot doc-section__title">Footer.</h1>
       <p>
       From &nbsp;
         <a href="https://github.com/transferwise/public-navigation">Public navigation components</a>

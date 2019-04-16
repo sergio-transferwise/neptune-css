@@ -9,9 +9,8 @@ import './less/prism.css';
 const Carousel = () => (
   <section id="carousel" className="section">
     <div className="container container--wide">
-      <h1 className="colored-dot doc-section__title">
-      Carousel
-      </h1>
+      <h1 className="colored-dot doc-section__title">Carousel.</h1>
+
       <p>
 A slideshow component for cycling through elements, like a carousel.
         <strong>Nested carousels are not supported.</strong>

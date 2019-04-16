@@ -13,7 +13,7 @@ const HeaderDoc = () => (
       </svg>
     </a>
     <div className="container container--wide">
-      <h1 className="colored-dot doc-section__title">Navbar</h1>
+      <h1 className="colored-dot doc-section__title">Navbar.</h1>
       <ul className="nav doc-colums--4 m-b-4">
         <li className=""><a href="#navbar-default">Default navbar</a></li>
         <li className="active"><a href="#navbar-brand-image">Brand image</a></li>

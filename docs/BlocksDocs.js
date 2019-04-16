@@ -8,11 +8,10 @@ import './less/prism.css';
 const Blocks = () => (
   <section id="blocks" className="container container--wide section">
     <h1 className="colored-dot">Blocks.</h1>
-    <p className="lead">703 bytes</p>
-    <p className="lead">
-      Easily highlight new or unread items by adding a
-      <code>{' <span class="badge">'}</code>
-      to links, Bootstrap navs, and more.
+    <p className="lead">295 B</p>
+
+    <p>
+      Wrap content in a box with a <code>{'<div class="block"></div>'}</code> class, and make them clickable with <code>{'<a href="#" className="block block--withLink"></a>'}</code>.
     </p>
 
     <div className="doc-example">

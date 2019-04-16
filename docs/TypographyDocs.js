@@ -2,7 +2,7 @@ import React from 'react';
 
 const Typography = () => (
   <section id="typography" className="container container--wide section">
-    <h1 className="colored-dot doc-section__title">Typography</h1>
+    <h1 className="colored-dot doc-section__title">Typography.</h1>
     <h2 id="headings">Headings</h2>
     <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classNames are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
 
@@ -11,7 +11,7 @@ const Typography = () => (
         <tbody>
           <tr>
             <td>
-              <h1>h1. heading</h1>
+              <h1>h1. heading.</h1>
             </td>
             <td className="type-info">
               <span className="hidden-xs hidden-sm">
@@ -141,7 +141,7 @@ h6. heading
     </p>
     <div className="d-flex" data-example-id="small-headings">
       <div className="bg-default p-a-2">
-        <h1>h1. heading</h1>
+        <h1>h1. heading.</h1>
         <h2>h2. heading</h2>
         <h3>h3. heading</h3>
         <h4>h4. heading</h4>
@@ -149,7 +149,7 @@ h6. heading
         <h6>h6. heading</h6>
       </div>
       <div className="bg-info p-a-2">
-        <h1>h1. heading</h1>
+        <h1>h1. heading.</h1>
         <h2>h2. heading</h2>
         <h3>h3. heading</h3>
         <h4>h4. heading</h4>
@@ -157,7 +157,7 @@ h6. heading
         <h6>h6. heading</h6>
       </div>
       <div className="bg-primary p-a-2">
-        <h1>h1. heading</h1>
+        <h1>h1. heading.</h1>
         <h2>h2. heading</h2>
         <h3>h3. heading</h3>
         <h4>h4. heading</h4>
@@ -256,22 +256,22 @@ h6. heading
         <tbody>
           <tr>
             <td>
-              <h1 className="display-1">Display 1</h1>
+              <h1 className="display-1">Display 1.</h1>
             </td>
           </tr>
           <tr>
             <td>
-              <h1 className="display-2">Display 2</h1>
+              <h1 className="display-2">Display 2.</h1>
             </td>
           </tr>
           <tr>
             <td>
-              <h1 className="display-3">Display 3</h1>
+              <h1 className="display-3">Display 3.</h1>
             </td>
           </tr>
           <tr>
             <td>
-              <h1 className="display-4">Display 4</h1>
+              <h1 className="display-4">Display 4.</h1>
             </td>
           </tr>
         </tbody>

@@ -7,9 +7,8 @@ import './less/prism.css';
 
 const CircleBarckgrounds = () => (
   <section id="circle-backgrounds" className="container container--wide section">
-    <h1 className="colored-dot doc-section__title doc-h1">
-          Circle Backgrounds
-    </h1>
+    <h1 className="colored-dot doc-section__title doc-h1">Circle Backgrounds.</h1>
+
     <p className="lead">Backgrounds are applied to box elements. This could be a grid column, a page width block, or something custom.</p>
     <p>
 The

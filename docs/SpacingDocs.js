@@ -7,10 +7,9 @@ import './less/prism.css';
 
 const Spacing = () => (
   <section id="spacing" className="container container--wide">
-    <h1 className="colored-dot  doc-section__title doc-h1">
-      Spacing
-    </h1>
-    <p>Several utility classes are available for spacing. </p>
+    <h1 className="colored-dot doc-section__title doc-h1">Spacing.</h1>
+    <p>Several utility classes are available for spacing.</p>
+
     <p>
       The classes are named using the format
       <strong> [property]-[sides]-[size] </strong>

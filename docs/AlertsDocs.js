@@ -7,7 +7,7 @@ import './less/prism.css';
 
 const Alerts = () => (
   <section id="alerts" className="container container--wide section">
-    <h1 className="colored-dot doc-section__title">Alerts</h1>
+    <h1 className="colored-dot doc-section__title">Alerts.</h1>
 
     <p className="lead">
 Provide contextual feedback messages for typical user
