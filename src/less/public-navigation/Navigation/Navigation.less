@@ -1,5 +1,13 @@
 @import '~bootstrap/less/variables.less';
 
+.navbar-background {
+  transition: all var(--transition-duration) ease-in-out;
+
+  &.navbar-background--inverse {
+    background-color: var(--brand-primary);
+  }
+}
+
 .navbar-static-top {
   background: transparent;
 }

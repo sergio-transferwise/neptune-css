@@ -22,9 +22,10 @@ import "~neptune-css/build/css/public-navigation.css";
       />
 
     </div>
-    <header className="bg-primary">
+    <div className="navbar-background navbar-background--inverse">
       <PublicNavigation language="en" />
-    </header>
+    </div>
+    
   </section>
 );
 

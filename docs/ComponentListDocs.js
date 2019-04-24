@@ -42,6 +42,11 @@ const ComponentList = () => (
             <small> 30 KB</small>
           </li>
           <li>
+            <a href="#links">Links</a>
+            <small> 468 bytes</small>
+            <span className="badge badge-success m-l-1">new</span>
+          </li>
+          <li>
             <a href="#media">Media</a>
             <small> 403 bytes</small>
           </li>
@@ -56,6 +61,29 @@ const ComponentList = () => (
           <li>
             <a href="#navbar">Navbar</a>
             <small> 54 KB</small>
+          </li>
+          <li>
+            <a href="#publicNavigation">Public Navigation</a>
+            <small> 53 KB</small>
+            <span className="badge m-l-1">beta</span>
+          </li>
+          <li>
+            <a href="#publicNavigation">Public Navigation (legacy)</a>
+            <small> 61 KB</small>
+            <ul>
+              <li>
+                <a href="#navbar">Navbar</a>
+                <small> 53 KB</small>
+              </li>
+              <li>
+                <a href="#publicNavigation">Public Navigation</a>
+                <small> 7 KB</small>
+              </li>
+              <li>
+                <a href="#utilities">Utilities</a>
+                <small> 1 KB</small>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#footer">Footer</a>
@@ -151,30 +179,6 @@ const ComponentList = () => (
               </li>
             </ul>
           </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Public navigation</h3>
-        <ul className="doc-list">
-          <li>
-            <a href="#publicNavigation">Public Navigation</a>
-            <small> 53 KB</small>
-            <ul>
-              <li>
-                <a href="#navbar">Navbar</a>
-                <small> 53 KB</small>
-              </li>
-              <li>
-                <a href="#publicNavigation">Public Navigation</a>
-                <small> 7 KB</small>
-              </li>
-              <li>
-                <a href="#utilities">Utilities</a>
-                <small> 1 KB</small>
-              </li>
-            </ul>
-          </li>
-
         </ul>
       </div>
       <div>

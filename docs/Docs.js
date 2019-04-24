@@ -26,6 +26,7 @@ import Columns from './ColumnsDocs';
 import Container from './ContainerDocs';
 import Skew from './SkewDocs';
 import Flex from './FlexDocs';
+import Links from './LinksDocs';
 import Media from './MediaDocs';
 import Background from './BackgroundDocs';
 import Utilities from './UtilitiesDocs';
@@ -67,6 +68,7 @@ const Docs = () => (
       <Carousel />
       <Circles />
       <Forms />
+      <Links />
       <Media />
       <Table />
       <Skew />
