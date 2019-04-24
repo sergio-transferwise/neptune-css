@@ -12,7 +12,7 @@ module.exports = function(mode, entries) {
       return entryPoints;
     }, {}),
     output: {
-      path: paths.appBuild
+      path: paths.appBuild,
     },
     plugins: [
       new MiniCssExtractPlugin({
@@ -64,7 +64,7 @@ module.exports = function(mode, entries) {
       ]
     },
     optimization: {
-      minimizer: [new OptimizeCSSAssetsPlugin({})],
+      minimizer: [new OptimizeCSSAssetsPlugin()],
       splitChunks: {
         cacheGroups: entries.forEach(entry => {
           return {

@@ -8,6 +8,7 @@ import './carousel';
 import './circle-backgrounds';
 import './circles';
 import './colored-dot';
+import './code';
 import './flex';
 import './footer';
 import './forms';

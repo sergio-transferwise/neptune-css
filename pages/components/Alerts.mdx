@@ -1,0 +1,53 @@
+import Code from '../../doc-components/Code';
+
+<p className="lead">
+Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+</p>
+
+## Examples
+
+Wrap any text and an optional dismiss button in `.alert` and one of the four contextual classes (e.g., `.alert-success`) for basic alert messages.
+
+<div className="alert">
+  <h4>No default class</h4>
+  <p>
+  Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
+  </p>
+</div>
+
+<div className="alert alert-success" role="alert">
+  <strong>Well done!</strong>
+  <p>
+  You successfully read this important alert message.
+  </p>
+</div>
+<div className="alert alert-info" role="alert">
+  <strong>Heads up!</strong>
+  <p>
+  This alert needs your attention, but it's not super important.
+  </p>
+</div>
+<div className="alert alert-warning" role="alert">
+  <strong>Warning!</strong>
+  <p>
+  Better check yourself, you're not looking too good.
+  </p>
+</div>
+<div className="alert alert-danger" role="alert">
+  <strong>Oh snap!</strong>
+  <p>
+  Change a few things up and try submitting again.
+  </p>
+</div>
+
+<Code lang="html">{`
+<div className="alert alert-success" role="alert">...</div>
+<div className="alert alert-info" role="alert">...</div>
+<div className="alert alert-warning" role="alert">...</div>
+<div className="alert alert-danger" role="alert">...</div>
+`}</Code>
+
+export const meta = {
+  displayName: 'Alerts',
+  abstractURL: 'https://share.goabstract.com/a371db59-a0d0-40d4-b233-5fae380f0071'
+}
