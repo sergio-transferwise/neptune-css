@@ -47,6 +47,11 @@ const ComponentList = () => (
             <span className="badge badge-success m-l-1">new</span>
           </li>
           <li>
+            <a href="#logos">Logos</a>
+            <small> 15 KB</small>
+            <span className="badge badge-success m-l-1">new</span>
+          </li>
+          <li>
             <a href="#media">Media</a>
             <small> 403 bytes</small>
           </li>
@@ -68,7 +73,7 @@ const ComponentList = () => (
             <span className="badge m-l-1">beta</span>
           </li>
           <li>
-            <a href="#publicNavigation">Public Navigation (legacy)</a>
+            <a href="#publicNavigationLegacy">Public Navigation (legacy)</a>
             <small> 61 KB</small>
             <ul>
               <li>

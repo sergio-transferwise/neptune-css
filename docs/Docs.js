@@ -8,6 +8,7 @@ import '../bundles/neptune';
 
 import NavbarDoc from './NavbarDocs';
 import PublicNavigationDoc from './PublicNavigationDocs';
+import PublicNavigationLegacyDoc from './PublicNavigationLegacyDocs';
 import Alerts from './AlertsDocs';
 import Core from './CoreDocs';
 import ComponentList from './ComponentListDocs';
@@ -27,6 +28,7 @@ import Container from './ContainerDocs';
 import Skew from './SkewDocs';
 import Flex from './FlexDocs';
 import Links from './LinksDocs';
+import Logos from './LogosDocs';
 import Media from './MediaDocs';
 import Background from './BackgroundDocs';
 import Utilities from './UtilitiesDocs';
@@ -69,6 +71,7 @@ const Docs = () => (
       <Circles />
       <Forms />
       <Links />
+      <Logos />
       <Media />
       <Table />
       <Skew />
@@ -80,6 +83,7 @@ const Docs = () => (
       <Utilities />
       <NavbarDoc />
       <PublicNavigationDoc />
+      <PublicNavigationLegacyDoc />
       <FooterDoc />
     </div>
   </StrictMode>
