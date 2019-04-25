@@ -1,3 +1,9 @@
+@import (reference) "~bootstrap/less/mixins/clearfix.less";
+
+@import "../logos.less";
+@import "../utilities.less";
+// @import "docs.less";
+
 @import "Navigation/Navigation.less";
 @import "Navigation/ButtonItem/ButtonItem.less";
 @import "Navigation/common/MenuToggle/MenuToggle.less";
@@ -9,3 +15,101 @@
 @import "Navigation/Menu/Items/Item/ItemContent/ItemContent.less";
 @import "Navigation/Menu/Items/Item/LanguageSelector/LanguageSelector.less";
 @import "Navigation/Menu/Items/Item/LanguageSelector/LanguageDropdown/LanguageDropdown.less";
+
+.navbar-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  -webkit-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+/* From grid.less only the container part */
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--spacing-1-mobile);
+  padding-left: var(--spacing-1-mobile);
+
+  @media (min-width: @screen-sm-min) {
+    padding-right: var(--spacing-1-tablet);
+    padding-left: var(--spacing-1-tablet);
+  }
+
+  @media (min-width: @screen-lg-min) {
+    padding-right: var(--spacing-1-desktop);
+    padding-left: var(--spacing-1-desktop);
+  }
+
+  @media (min-width: @screen-xl-min) {
+    max-width: @container-xl;
+  }
+
+  .clearfix()
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+
+  .navbar-right {
+    float: right !important;
+  }
+}
+
+.navbar-brand {
+  float: left;
+  // padding: @navbar-padding-vertical @navbar-padding-horizontal
+  //   (@navbar-padding-vertical - 3px);
+  padding: 8px 16px 5px;
+  font-size: var(--font-size-large);
+  line-height: var(--navbar-line-height);
+  margin-top: 12px;
+  margin-right: 10px;
+  height: calc(var(--spacer) * 3);
+  width: 118px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+}
+.navbar .navbar-brand,
+.navbar-inverse .navbar-brand {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: transparent;
+
+  &:hover,
+  &:focus {
+    color: transparent;
+  }
+}
+
+.navbar .flag, .navbar .fast-flag {
+  height: 24px;
+  width: 24px;
+  margin-top: 16px;
+  margin-right: 8px;
+  float: left;
+}
+
+.navbar .logo-text {
+  height: 20px;
+  width: 104px;
+  margin-top: 16.5px;
+  margin-right: 8px;
+  float: left;
+}

@@ -15,7 +15,7 @@ import './grid';
 import './grid-layout';
 import './links';
 import './logos';
-// import './navbar';
+import './navbar';
 import './loaders';
 import './media';
 import './public-navigation';

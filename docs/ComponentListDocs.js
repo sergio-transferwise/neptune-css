@@ -86,7 +86,7 @@ const ComponentList = () => (
               </li>
               <li>
                 <a href="#utilities">Utilities</a>
-                <small> 1 KB</small>
+                <small> 5 KB</small>
               </li>
             </ul>
           </li>

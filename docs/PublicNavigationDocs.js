@@ -19,6 +19,13 @@ const PublicNavigationDoc = () => (
 import "~neptune-css/build/css/public-navigation.css";
           `}
       />
+      <div className="alert alert-info">
+        <p>
+          <a href="https://transferwise.github.io/public-navigation/" target="_blank">Try the demo</a>
+          {' '}
+to view the responsive version as well.
+        </p>
+      </div>
 
     </div>
     <div className="navbar-background navbar-background--inverse">

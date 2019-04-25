@@ -775,7 +775,7 @@ body { padding-top: 56px; }
       </p>
       <div className="alert alert-info">
         <p>
-          <a href="./docs/demos/nested-navbar/index.html" target="_blank">Try the demo</a>
+          <a href="./docs/demos/nested-navbar.html" target="_blank">Try the demo</a>
           {' '}
           to view these options and the responsive version as well.
         </p>
@@ -896,7 +896,7 @@ body { padding-top: 56px; }
       <p>On mobile, the subnav-menu behaves like an ordinary navbar-nav.</p>
       <div className="alert alert-info">
         <p>
-          <a href="./docs/demos/navbar-secondary" target="_blank">Try the demo</a>
+          <a href="./docs/demos/navbar-secondary.html" target="_blank">Try the demo</a>
           {' '}
           to view these options and the responsive version as well.
         </p>
