@@ -7,6 +7,9 @@ const path = require("path");
 module.exports = function(mode, entries) {
   return {
     mode,
+    performance: {
+      hints: false,
+    },
     entry: entries.reduce((entryPoints, entry) => {
       entryPoints[entry.name] = entry.path;
       return entryPoints;
