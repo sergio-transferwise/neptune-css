@@ -7,7 +7,10 @@ import * as foundations from '../pages/foundations'
 import * as layout from '../pages/layout'
 import * as components from '../pages/components'
 import * as utilities from '../pages/utilities'
-import ComponentsSidebar from './ComponentsSidebar'
+import * as docComponents from '.'
+import Logo from '../static/assets/img/logo_full_inverse.svg'
+
+const {ComponentsSidebar, FoundationsSidebar, GitHubLink, LayoutSidebar, UtilitiesSidebar} = docComponents
 
 const pages = {
   ...foundations,
@@ -17,6 +20,19 @@ const pages = {
 }
 
 const {pageMap} = getConfig().publicRuntimeConfig
+
+const getTitle = page => page && (
+  <h1 className="colored-dot">
+    {page.displayName}.
+  </h1>);
+
+const getBetaBadge = page => page && page.isBeta && (
+  <span className="badge badge-success">beta</span>);
+
+const getSize = page => page && page.size && (
+  <p>{page.size} minified</p>);
+
+const editBaseURL = `https://github.com/transferwise/neptune-css/edit/master/pages`
 
 const Layout = ({ children, router }) => {
   const {pathname} = router
@@ -35,63 +51,78 @@ const Layout = ({ children, router }) => {
   const foundation = getPage(pathname.replace('/foundations/', ''))
   const layout = getPage(pathname.replace('/layout/', ''))
   const component = getPage(pathname.replace('/components/', ''))
-  const utilities = getPage(pathname.replace('/utilities/', ''))
+  const utility = getPage(pathname.replace('/utilities/', ''))
+  const page = foundation || layout || component || utility;
 
   return (
-    <>
-      <div className="doc" id="top">
-        <a href="#top" className="doc-go-top">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24">
-            <title>up-arrow</title>
-            <polygon
-              fill="#2e4369"
-              points="18.01 7.47 12 1.46 5.99 7.47 6.7 8.18 11.5 3.38 11.5 22 12.5
-              22 12.5 3.38 17.3 8.18 18.01 7.47"
-            />
-          </svg>
-        </a>
+    <div id="top" className="PageLayout">
+      <header className="Header">
+        <div className="Header__Fixed">
+          <Link href="/">
+            <a className="Logos"><Logo /></a>
+          </Link>
 
-        <header>
-          <ul>
-            <li>
-              <Link href="/foundations/Colours">
-                <a className={`${foundation ? 'active' : null}`}>Foundations</a>
-              </Link>{' '}
-            </li>
-            <li>
-              <Link href="/layout/Flex">
-                <a className={`${layout ? 'active' : null}`}>Layout</a>
-              </Link>{' '}
-            </li>
-            <li>
-              <Link href="/components/Alerts">
-                <a className={`${component ? 'active' : null}`}>Components</a>
-              </Link>{' '}
-            </li>
-            <li>
-              <Link href="/utilities/Background">
-                <a className={`${utilities ? 'active' : null}`}>Utilities</a>
-              </Link>{' '}
-            </li>
-          </ul>
-        </header>
+          <div className="Header__Inner">
+            <ul className="Nav Nav--dark">
+              <li>
+                <Link href="/foundations/Colours">
+                  <a className={`Nav__Link ${foundation ? 'active' : null}`}>Foundations</a>
+                </Link>{' '}
+              </li>
+              <li>
+                <Link href="/layout/Flex">
+                  <a className={`Nav__Link ${layout ? 'active' : null}`}>Layout</a>
+                </Link>{' '}
+              </li>
+              <li>
+                <Link href="/components/Alerts">
+                  <a className={`Nav__Link ${component ? 'active' : null}`}>Components</a>
+                </Link>{' '}
+              </li>
+              <li>
+                <Link href="/utilities/Background">
+                  <a className={`Nav__Link ${utility ? 'active' : null}`}>Utilities</a>
+                </Link>{' '}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-        {component && (
-          <ComponentsSidebar />
-        )}
+      {page && (
+        <div className="PageLayout__Inner">
+          <div className="Sidebar">
+            {component &&
+              <ComponentsSidebar />
+            }
 
-        {(foundation || layout || component || utilities) && (
-          <h1 className="colored-dot">
-            {foundation && foundation.displayName}
-            {layout && layout.displayName}
-            {component && component.displayName}
-            {utilities && utilities.displayName}.
-          </h1>
-        )}
+            {foundation &&
+              <FoundationsSidebar />
+            }
 
-        {children}
-      </div>
-    </>
+            {layout &&
+              <LayoutSidebar />
+            }
+
+            {utility &&
+              <UtilitiesSidebar />
+            }
+          </div>
+
+          <div className="Content">
+            {getTitle(page)}
+            {getBetaBadge(page)}
+            {getSize(page)}
+
+            {children}
+
+            {filename && (
+              <GitHubLink url={`${editBaseURL}${filename}`} />
+            )}
+          </div>
+        </div>
+      )}
+    </div>
   )
 }
 

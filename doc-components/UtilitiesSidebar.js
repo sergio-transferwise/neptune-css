@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import {withRouter} from 'next/router'
 import {default as Link} from 'next/link'
 
-import * as components from '../pages/components'
+import * as utilities from '../pages/utilities'
 
 const getLink = router => {
-  return Object.values(components).map(({displayName: name, isBeta}) => {
-    const isSelected = router.pathname === `/components/${name}`
+  return Object.values(utilities).map(({displayName: name, isBeta}) => {
+    const isSelected = router.pathname === `/utilities/${name}`
 
     return (
       <li key={name}>
-        <Link href={`/components/${name}`}>
+        <Link href={`/utilities/${name}`}>
           <a className={`Nav__Link ${isSelected ? 'active' : ''}`}>
             {name}
             {' '}
@@ -24,14 +24,14 @@ const getLink = router => {
   })
 }
 
-class ComponentsSidebar extends Component {
+class UtilitiesSidebar extends Component {
   render() {
     const { router } = this.props;
 
     return (
       <div className="Sidebar__Fixed">
         <div className="Sidebar__Header">
-          <h3 className="Sidebar__Title">Components</h3>
+          <h3 className="Sidebar__Title">Utilities</h3>
         </div>
 
         <div className="Sidebar__Inner">
@@ -44,4 +44,4 @@ class ComponentsSidebar extends Component {
   }
 }
 
-export default withRouter(ComponentsSidebar)
+export default withRouter(UtilitiesSidebar)
