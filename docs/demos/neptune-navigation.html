@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Neptune public navigation</title>
+    <link rel="stylesheet" href="../../build/css/core.css">
+    <link rel="stylesheet" href="../../build/css/badge.css">
+    <link rel="stylesheet" href="../../build/css/grid.css">
+    <link rel="stylesheet" href="../../build/css/neptune-navigation.css">
+    <link rel="stylesheet" href="../../build/css/buttons.css">
+    <link rel="stylesheet" href="../../build/css/dropdowns.css">
+</head>
+
+<body>
+    <header class="tw-public-navigation" data-tracking-id="public-navigation">
+        <div class="tw-public-navigation__container">
+            <div class="tw-public-navigation__header">
+                <a href="https://transferwise.com" class="tw-public-navigation__logo">
+                    <span class="sr-only">TransferWise</span>
+                </a>
+                <button class="tw-public-navigation__menu-toggle" type="button" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="tw-public-navigation__menu">
+                <ul class="tw-public-navigation__list">
+                    <li class="tw-public-navigation__item dropdown" tabindex="-1">
+                        <button class="tw-public-navigation__button dropdown-toggle" type="button">
+                            <span class="tw-public-navigation-item-content__text">Money transfer</span>
+                        </button>
+                        <ul class="dropdown-menu tw-public-navigation__dropdown-menu p-a-0 hidden-xs hidden-sm">
+                            <li class="dropdown-cta">
+                                <a href="/" class="callout-container dropdown-content">
+                                    <img class="m-b-1"
+                                        src="https://daw291njkc3ao.cloudfront.net/conversion/navigation/send-money.svg"
+                                        alt=""><strong class="link-callout ">Send money</strong>
+                                    <p class="m-t-1 m-b-0">Make a one-off payment. You'll get the real exchange rate
+                                        with the low fee we're known for.</p>
+                                </a></li>
+                            <li class="">
+                                <a href="#chart" target="_self" class="callout-container dropdown-content">
+                                    <strong class="link-callout ">Pricing</strong>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#b-transfer-map-light" target="_self"
+                                    class="callout-container dropdown-content">
+                                    <strong class="link-callout ">About TransferWise</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tw-public-navigation__item dropdown" tabindex="-1" data-analytics-id="receive">
+                        <button class="tw-public-navigation__button dropdown-toggle" type="button">
+                            <span class="tw-public-navigation-item-content__text">Borderless account</span>
+                            <span class="tw-public-navigation__badge badge badge-success">New</span>
+                            <ul class="dropdown-menu tw-public-navigation__dropdown-menu p-a-0 hidden-xs hidden-sm">
+                                <li class="dropdown-cta">
+                                    <a href="/gb/borderless" class="callout-container dropdown-content">
+                                        <img class="m-b-1"
+                                            src="https://daw291njkc3ao.cloudfront.net/conversion/navigation/borderless.svg"
+                                            alt=""><strong class="link-callout ">Borderless account</strong>
+                                        <p class="m-t-1 m-b-0">Receive money from 30+ countries. Send at the real
+                                            exchange rate, and spend with a free Mastercard.</p>
+                                    </a></li>
+                                <li class=""><a href="/gb/borderless#get-paid"
+                                        class="callout-container dropdown-content">
+                                        <strong class="link-callout ">Pricing</strong>
+                                    </a>
+                                </li>
+                                <li class=""><a href="/gb/borderless#borderless-explainer-video"
+                                        class="callout-container dropdown-content">
+                                        <strong class="link-callout ">About
+                                            TransferWise</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="tw-public-navigation__item dropdown" tabindex="-1">
+                        <button class="tw-public-navigation__button dropdown-toggle" type="button">
+                            <span class="tw-public-navigation-item-content__text">Business</span>
+                        </button>
+                        <ul class="dropdown-menu tw-public-navigation__dropdown-menu p-a-0 hidden-xs hidden-sm">
+                            <li class="dropdown-cta"><a href="/gb/business"
+                                    class="callout-container dropdown-content"><img class="m-b-1"
+                                        src="https://daw291njkc3ao.cloudfront.net/conversion/navigation/business.svg"
+                                        alt=""><strong class="link-callout ">TransferWise for business</strong>
+                                    <p class="m-t-1 m-b-0">A business account for 40+ currencies. Pay invoices and
+                                        people abroad, and spend with a free debit card.</p>
+                                </a></li>
+                            <li class="">
+                                <a href="/gb/business/pricing-and-coverage" class="callout-container dropdown-content">
+                                    <strong class="link-callout ">Business pricing</strong>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/gb/business/freelancer" class="callout-container dropdown-content">
+                                    <strong class="link-callout ">Freelancers</strong></a>
+                            </li>
+                            <li class="">
+                                <a href="/gb/business/ecommerce" class="callout-container dropdown-content">
+                                    <strong class="link-callout ">E-commerce</strong>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/gb/business/payouts" class="callout-container dropdown-content">
+                                    <strong class="link-callout ">Enterprise</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tw-public-navigation__item" tabindex="-1">
+                        <a href="/help" class="tw-public-navigation__link link-callout">
+                            <span class="tw-public-navigation-item-content__text">Help</span>
+                        </a>
+                    </li>
+                    <li class="dropdown hidden-md tw-public-navigation__language-selector" tabindex="-1">
+                        <button class="tw-public-navigation__button dropdown-toggle link-callout" type="button">
+                            <span class="tw-icon tw-icon-sm tw-public-navigation-item-content__icon" aria-hidden="true"
+                                role="presentation">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1zM7.34 9.25h9.32a14.54 14.54 0 0 1 0 5.5H7.34a14.54 14.54 0 0 1 0-5.5zm10.25 0h4.1a9.89 9.89 0 0 1 0 5.5h-4.1a15.4 15.4 0 0 0 0-5.5zm3.79-.92h-4a15.16 15.16 0 0 0-3.08-6.14 10.08 10.08 0 0 1 7.08 6.14zM12.86 2a14.41 14.41 0 0 1 3.58 6.37H7.56A14.41 14.41 0 0 1 11.14 2H12c.29 0 .58-.06.86 0zm-3.16.19a15.16 15.16 0 0 0-3.08 6.14h-4A10.08 10.08 0 0 1 9.7 2.19zM2.31 9.25h4.1a15.4 15.4 0 0 0 0 5.5h-4.1a9.89 9.89 0 0 1 0-5.5zm.31 6.42h4a15.16 15.16 0 0 0 3.08 6.14 10.08 10.08 0 0 1-7.08-6.14zM11.14 22a14.41 14.41 0 0 1-3.58-6.37h8.88A14.41 14.41 0 0 1 12.86 22H12c-.29 0-.58.06-.86 0zm3.16-.23a15.16 15.16 0 0 0 3.08-6.14h4a10.08 10.08 0 0 1-7.08 6.18z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="tw-public-navigation-item-content__text">EN</span>
+                        </button>
+                        <ul
+                            class="dropdown-menu tw-public-navigation__dropdown-menu p-a-0 tw-public-navigation__language-dropdown">
+                            <li class="dropdown-cta hidden-xs hidden-sm hidden">
+                                <h2 class="dropdown-content"><span>Bonjour le monde<span
+                                            class="text-info">.</span></span></h2>
+                            </li>
+                            <li class="hidden-md hidden-lg hidden-xl">
+                                <div class="tw-public-navigation__header pull-md-left"><button
+                                        class="tw-public-navigation_Tvisible-xs visible-sm " aria-controls="navbar"
+                                        aria-expanded="true" type="button"><svg width="18" height="16"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 8l8-8 1.5 1.5L4 7h14v2H4l5.5 5.5L8 16z" fill="#00B9FF"
+                                                fill-rule="evenodd"></path>
+                                        </svg></button>
+                                    <div class="pull-xs-left tw-public-navigation__logo "><a
+                                            href="https://transferwise.com"
+                                            class="logo-text logo-text-inverse visible-xs-block visible-sm-block"><span
+                                                class="sr-only">TransferWise</span></a><a
+                                            href="https://transferwise.com"
+                                            class="navbar-brand hidden-xs hidden-sm hidden-md m-b-1">TransferWise</a><a
+                                            href="https://transferwise.com"
+                                            class="fast-flag flag-info visible-md-block"><span
+                                                class="sr-only">TransferWise</span></a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">cs-CZ</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">de</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="text-info">en</strong>
+                                    <span class="text-info glyphicon glyphicon-ok pull-xs-right pull-md-none">
+                                        </span></button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">en_US</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">es</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">fr</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">hu</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">it</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">ja</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">pl</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">pt</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">ro</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">ru</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">tr</strong>
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn dropdown-content">
+                                    <strong class="">zh-HK</strong>
+                                    </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tw-public-navigation__item">
+                        <a href="/login" class="tw-public-navigation__link">Log in</a>
+                    </li>
+                    <li class="tw-public-navigation__item">
+                        <a href="/register" class="tw-public-navigation__btn btn btn-image btn-sm">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="tw-main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cupiditate in molestias
+        debitis nobis a
+        minima, explicabo architecto mollitia ad eum, itaque inventore et illo quas dolores repellendus. Repellendus
+        esse quisquam illum  nihil non unde provident quae suscipit modi aut voluptatem fugit quas nostrum iste, minus
+        ipsam ab excepturi? Ipsum voluptatem, eligendi natus fugit quasi beatae ea unde dolorem vitae consequatur atque
+        ullam quo sequi. Est, magnam incidunt ipsa maiores suscipit alias architecto<a href="/register" class="">Register</a> eligendi vel ducimus provident in
+        repellat culpa cum, accusantium veniam fugit sed praesentium, fugiat at ab. Nobis ducimus commodi provident qui
+        quibusdam? Quisquam suscipit ipsa cumque tenetur ducimus assumenda. Ratione magnam enim voluptatum laudantium
+        ipsam voluptates quasi saepe libero beatae doloremque alias expedita nulla ipsum consequatur iure illo fuga
+        excepturi ullam, exercitationem quo? Dolorum, esse doloremque similique voluptate in consequatur at. Quidem,
+        soluta distinctio ipsa optio, consectetur amet obcaecati delectus minus quia, repellendus voluptatem laboriosam
+        eos ea! Consectetur, harum doloribus voluptatum et odio adipisci quos corporis laudantium vero, repellendus non
+        consequuntur ipsa totam nemo! Tempora, officia! Iure magnam reiciendis corporis tempore consectetur voluptatum
+        minima quia deserunt sit exercitationem? Optio aperiam, dignissimos nostrum temporibus doloribus repellendus. Id
+        hic expedita, iure ex reprehenderit placeat ea fugiat sint vitae recusandae! Eveniet rem, quo nesciunt nostrum
+        odio assumenda quod molestiae, nobis laboriosam eos harum fuga hic sit necessitatibus consectetur dignissimos,
+        quidem dolores! Sit nobis nemo vero. Soluta sequi nobis dolor impedit voluptate ad quam dolorum molestias atque
+        pariatur. Quia, quas ipsam! Necessitatibus itaque, nemo rem provident ea quibusdam porro consectetur repellat
+        temporibus. Soluta vel consequatur voluptates eos nam necessitatibus dolore temporibus reprehenderit vitae quae
+        eveniet saepe debitis libero voluptatum, maiores perspiciatis commodi praesentium facilis ducimus unde facere.
+        Ullam, officia? Iure ipsa maxime voluptates, numquam voluptate ea cumque vitae vel voluptatum veritatis ex
+        cupiditate impedit consequatur corporis sed, odit incidunt praesentium animi! Dolores quas neque amet quam
+        officiis recusandae tempore quasi soluta alias officia voluptas iste possimus temporibus unde aut, sint natus
+        animi quaerat, cum rerum sit. Consequatur maxime fugiat alias rem accusantium consectetur quae error. Fugit esse
+        id distinctio laudantium error explicabo amet temporibus consectetur culpa sed nam tempore, animi architecto
+        libero, ut pariatur et eveniet rem quo eaque sequi ullam molestias molestiae totam? Esse, dolore. Doloribus
+        optio culpa aliquid? Consectetur id consequatur repellat ex culpa. Quo cum deserunt quasi magnam ex! Labore
+        similique adipisci repudiandae. Nihil assumenda cum facilis cupiditate officia. Perspiciatis architecto maxime
+        aliquid consequatur dolores fugiat, ipsam, natus dicta voluptatem voluptates praesentium saepe iusto harum unde
+        nam repellat veritatis at ullam. Totam expedita quae doloremque, quia architecto nulla corporis minus quam
+        doloribus cumque est blanditiis voluptate libero, quo officiis perspiciatis, minima vitae modi tempore
+        consequuntur voluptates? Alias nobis vero aliquid eveniet nemo accusantium quos iusto! Recusandae repellat
+        minima corporis dolore deserunt autem enim debitis a quisquam nisi provident accusantium explicabo, quam
+        voluptatibus, id voluptates suscipit quod culpa totam eaque. Est quisquam quo deleniti impedit. Consequuntur,
+        provident officia accusantium ipsum exercitationem ratione illum, quia hic, harum doloribus officiis. Quaerat
+        mollitia quibusdam a esse, autem amet, sit quasi dolore quidem sunt nostrum debitis impedit nesciunt non quos
+        maiores aspernatur fuga vitae quae tenetur nemo! Id exercitationem quidem animi iure, qui nihil odit amet quos
+        aperiam vel blanditiis natus, ipsa magni laudantium ex itaque iste quibusdam. Dicta delectus autem numquam,
+        debitis doloribus temporibus totam perferendis rerum. Ab pariatur ex cupiditate reiciendis sunt voluptates ipsum
+        nemo deleniti neque deserunt, sit eveniet placeat, qui, magni quam nulla corporis ad nisi ut beatae quod
+        inventore at! Quaerat qui esse amet dolorum beatae dolorem possimus dicta. Aliquid perspiciatis quisquam
+        obcaecati repudiandae repellendus debitis incidunt corrupti doloremque, vel minus non. Repudiandae, in nesciunt
+        perferendis minus natus est earum at autem officia, debitis doloribus nam beatae odio quas quos non? Harum
+        corrupti nesciunt saepe ipsam vitae aspernatur quibusdam molestias ratione deleniti nulla in reprehenderit,
+        veritatis magnam eum dolor fuga tenetur ipsum at itaque omnis explicabo repellendus quos natus! Minima beatae
+        odio aliquid itaque ullam dicta voluptates, perspiciatis fugit tenetur iste a enim labore alias error aperiam
+        facere repellat vitae ad, dolor iusto reprehenderit eius. A modi sunt, praesentium fugit cupiditate suscipit
+        reprehenderit accusamus aperiam sequi voluptatem. Commodi repellat cupiditate neque similique quaerat adipisci
+        eius veniam illum, odit, possimus officia nobis quis dolores fugiat. Quas aperiam deleniti sapiente odit harum
+        corporis quibusdam inventore maiores repudiandae sed. Facere accusantium explicabo ea dolore voluptatum quaerat,
+        reprehenderit saepe mollitia perferendis, molestias sapiente qui in expedita est perspiciatis facilis?
+        Doloremque ab rerum pariatur illum magnam maiores corporis voluptatibus omnis provident! Laborum quisquam quia
+        veritatis quasi repellat saepe, sapiente qui necessitatibus nostrum, nam dolorum possimus vitae porro! Ipsum
+        quod soluta nihil ipsam quae atque debitis cupiditate delectus necessitatibus officia, placeat quisquam
+        reprehenderit esse? Temporibus, explicabo voluptatibus debitis saepe tenetur possimus. Consequuntur ipsa placeat
+        temporibus labore impedit! Laboriosam consequuntur porro nihil animi modi nesciunt inventore fugit ipsa ullam
+        molestias, asperiores repellendus numquam nisi quidem dicta facere nulla eum aliquam facilis, non quibusdam
+        dolore est? Tempore hic quod sint saepe laboriosam esse eos obcaecati quia dolore fugit ex aliquam eaque,
+        laborum velit expedita eum amet. Vitae sint consequuntur ea ad vero. Totam cum delectus libero mollitia neque.
+        Fugit, velit, dolor amet sit adipisci nam odio esse id architecto laboriosam vel cupiditate iure illum delectus
+        quasi nemo, optio consequatur? Expedita beatae sed, vero nemo, doloribus asperiores, ducimus earum eos
+        laudantium deleniti voluptates in aspernatur? Nihil culpa fugit sit fuga neque illo, odio saepe pariatur totam
+        unde nemo ea earum nisi reiciendis, eveniet sunt ad vel voluptatum animi maiores aspernatur eos cumque? Quis
+        fugiat quam dignissimos minus delectus culpa rem quibusdam consequatur deserunt, debitis voluptatibus, accusamus
+        saepe esse praesentium atque mollitia odit libero facilis sint quas ducimus. Nulla, laboriosam magnam nihil
+        saepe quisquam totam commodi illum modi tenetur quasi eveniet obcaecati omnis. Distinctio adipisci odio possimus
+        dolores, porro doloremque, aut praesentium consectetur at dolorum a explicabo eaque ipsam maxime deleniti facere
+        quaerat voluptate dolor, dolore ipsum non quos minima rerum veritatis? Consequuntur cupiditate nisi vero
+        inventore porro ut libero ea consectetur sint nostrum! Iste aliquid excepturi adipisci vero? Minima quae autem
+        voluptatibus, accusamus, assumenda fugiat doloremque, enim harum aperiam facere eum placeat? Sequi consequuntur
+        neque inventore quod. Reprehenderit dignissimos, necessitatibus reiciendis nisi cum harum enim distinctio
+        commodi aliquam numquam mollitia sit molestias explicabo voluptatibus cupiditate omnis vero suscipit ullam qui
+        consequuntur? Modi voluptate impedit repellat, eius ut maiores. Minima, nulla beatae suscipit possimus alias
+        nesciunt quam hic atque aspernatur reiciendis voluptas, assumenda iste ducimus odio aliquid sequi? Qui dolor
+        accusantium ex aliquid atque tempora cumque itaque omnis quisquam! Odit cum aliquid, perspiciatis magni sint
+        maiores optio a est excepturi et delectus corrupti eum! Aut, dolorum. Sed maiores accusantium reiciendis
+        blanditiis beatae quod nobis, atque explicabo. Obcaecati esse accusantium deleniti tempore fugiat, ratione non,
+        optio inventore nihil repellendus sed aliquam eius iusto ipsum. Ipsum, tempora officiis. Natus voluptate,
+        excepturi culpa necessitatibus perspiciatis ea, consequatur aperiam similique provident aspernatur minima?
+        Voluptates facilis quod natus obcaecati error magni veniam fugiat maxime minima cum voluptatum laborum,
+        aspernatur voluptatibus aut rerum porro praesentium sint nostrum, consequuntur laudantium ipsa necessitatibus
+        ullam? Expedita quibusdam officiis tempore odio quo doloribus dolorum voluptatum et labore illum voluptatem,
+        temporibus pariatur dicta id, delectus consequatur debitis molestiae, placeat asperiores autem nostrum
+        voluptates? Architecto, voluptatibus nemo? Ipsa beatae doloribus reprehenderit porro molestiae iusto unde maxime
+        commodi repellendus quas aspernatur quia, ex id mollitia fuga totam quam itaque fugiat magni. Nobis qui
+        aspernatur voluptatem consectetur omnis veritatis delectus. Quam obcaecati nam, nesciunt quibusdam hic totam
+        corrupti nisi. Necessitatibus dolore dolores velit veritatis molestias. A inventore, maxime iste ullam
+        cupiditate consequuntur facilis vitae modi? Asperiores, voluptate labore qui vel cupiditate impedit illum quo
+        repellat reiciendis fuga similique quia laudantium soluta aperiam hic voluptatibus doloribus possimus, voluptas
+        ipsam odit temporibus ullam. Harum consequuntur quasi natus dicta repudiandae ratione nostrum corporis neque,
+        aliquid ut! Voluptatem nulla distinctio tempora eos, placeat vero. Autem iste distinctio fuga nesciunt incidunt
+        voluptatibus perspiciatis, quis quod, nemo sequi, illo neque veniam velit eos? Cupiditate placeat repudiandae
+        rerum laboriosam in. Fuga magnam vel aperiam magni in. Dignissimos officiis possimus aut voluptate,
+        exercitationem incidunt eligendi voluptatibus qui architecto ad doloribus cumque nobis fugiat nulla minus
+        impedit? Necessitatibus eligendi commodi, omnis quos doloribus beatae, sed libero tempora in similique, qui
+        itaque ipsa dolore. Facilis totam odio commodi fuga velit nam aperiam laudantium saepe explicabo. Autem,
+        consequuntur quisquam commodi sint eaque laborum dicta voluptate consequatur illo maiores voluptatem voluptates
+        sit, corrupti deleniti sequi quod iste quo accusantium? Veniam iste delectus perferendis. Molestiae atque odio
+        omnis laudantium corrupti eaque eius nihil! Quas rerum eveniet itaque nisi consequuntur autem nulla unde quis
+        similique vitae neque temporibus repellat blanditiis aperiam, illo minus numquam obcaecati corporis officia
+        dolorem? Ab consequuntur esse perspiciatis molestias? Deleniti amet dolores expedita esse cumque alias quis
+        ducimus, veniam magni, tempore veritatis assumenda blanditiis repudiandae maiores! Animi dignissimos cumque
+        veritatis. Obcaecati dignissimos dolore doloribus, soluta assumenda enim quos consectetur rerum unde odit
+        similique et reprehenderit nemo facilis accusantium molestias aperiam eos pariatur ipsam sequi. Impedit
+        provident corporis minima laboriosam laborum tempore est architecto accusamus quaerat mollitia illo ipsam iure
+        blanditiis, ea dignissimos pariatur. Illum molestiae, labore ex maxime nemo totam consequatur quaerat assumenda
+        praesentium dicta aut dolorum nam ipsam porro dolore laboriosam dignissimos facere esse omnis aliquid officia.
+        Vero voluptatum itaque vitae similique maiores, explicabo ipsam id illo nulla doloribus sapiente iusto nobis sed
+        dolorum labore porro, distinctio, cumque delectus fugiat vel reiciendis accusantium perferendis esse! Porro,
+        repellendus? Repellendus, eligendi dolores nemo cumque sit est autem perferendis earum? Accusamus qui quis optio
+        nostrum quae asperiores esse sequi voluptas vitae, adipisci labore impedit necessitatibus similique, cupiditate
+        sint error at ad voluptatum possimus non minus, doloribus eveniet! Esse aliquid dolorum voluptatum commodi sed
+        debitis officia enim. Nostrum, consequatur libero vel illo sit officia accusamus at doloribus nihil, similique
+        commodi autem animi aut minus repudiandae repellat modi odio soluta rerum ab, obcaecati ipsa. Tempore est
+        ducimus ea minima sed voluptas soluta esse eaque! Assumenda cum sint totam veniam aspernatur ea doloremque ad
+        perspiciatis fugit. Quod iste molestias odit dolorem, inventore id ut labore dignissimos cum error consequatur
+        quae aliquam, quas sequi quasi eligendi. Est labore iste facilis officiis quis, repudiandae molestias vitae
+        pariatur. Quisquam saepe corrupti, dolore culpa architecto a mollitia deleniti voluptatem sapiente suscipit
+        impedit ducimus cum optio reprehenderit vel aut sit tempore pariatur minus exercitationem ipsam assumenda
+        dolorum? Est vel facilis ducimus dolores, repellendus officiis voluptates ad non nulla impedit delectus omnis,
+        dolore totam voluptate explicabo voluptatem fuga laboriosam exercitationem nemo ipsa. A modi dolor debitis quod
+        maxime excepturi consequuntur error repellat distinctio necessitatibus iste dolorum sunt tenetur voluptas iusto
+        non tempore culpa ea, quae nulla. Expedita, nihil! Omnis corporis explicabo pariatur, ipsa quia debitis neque
+        sed doloremque tenetur eius sit quam molestiae iste voluptas beatae officiis dolorum fuga! Nostrum, error nisi?
+        Dignissimos dolores blanditiis adipisci nulla quasi? Itaque reprehenderit unde sequi nam, harum laboriosam
+        corrupti tempora dolore ex quae quasi, neque necessitatibus repellendus modi! Enim deleniti nesciunt, beatae
+        obcaecati, sed nam at reiciendis amet nulla architecto, harum quia quas delectus corrupti voluptas dolorem
+        repellendus. Excepturi odit autem quam fugit distinctio itaque, praesentium odio ullam libero aspernatur fugiat
+        enim aliquid vel similique, voluptate ut, dolores velit! Aut quas aliquid nisi! Neque ullam deserunt ad odio ut
+        provident maiores magni fugiat nihil rerum voluptate architecto obcaecati repudiandae voluptates dicta eligendi
+        doloribus iste, itaque adipisci iusto ipsa in! Molestias, eveniet totam reprehenderit fuga nihil aut ratione
+        maiores alias aspernatur ex non, dolorem perspiciatis quis qui distinctio similique necessitatibus quod. Hic
+        incidunt, voluptatem, omnis quasi cupiditate impedit quod in deserunt minus necessitatibus vitae natus facere
+        atque tempore ratione suscipit eius. Consequatur eum laudantium nesciunt. Alias numquam iste possimus, quos vel
+        modi accusamus blanditiis laborum assumenda iure animi veniam deleniti fuga aspernatur reprehenderit fugiat
+        officiis provident quia consequatur expedita quis molestiae temporibus repellat! Et velit reiciendis provident,
+        deserunt deleniti delectus fugiat, voluptate aperiam rerum minus eius repellendus facilis mollitia, eum magni
+        excepturi repudiandae iusto optio beatae adipisci temporibus laborum. In assumenda tenetur, nobis omnis, ullam
+        fugiat consequatur vitae aliquam molestias nemo recusandae exercitationem dignissimos optio qui necessitatibus
+        eligendi praesentium, ipsum consectetur! Quibusdam aut, dicta enim facilis, blanditiis ratione odio distinctio
+        illo corrupti iusto expedita sapiente est nobis assumenda. Tempore tempora doloremque quia? Ea fugit ullam nobis
+        unde aut id explicabo consequatur corporis eius voluptate earum nisi, accusamus rem quasi in expedita eum quis
+        cupiditate! Voluptate inventore corrupti molestias laborum libero aliquam cumque minima maxime quam eius
+        temporibus asperiores repellat ab, dolorem omnis vitae. Adipisci iste, rerum ex quis et beatae suscipit
+        consequuntur! Modi quos veniam error placeat suscipit consequatur, pariatur asperiores illo nam eveniet eaque,
+        illum reprehenderit atque corporis iste maiores quod libero? Reprehenderit ea, aliquam expedita voluptate
+        adipisci quisquam veniam quos soluta repellat omnis exercitationem rem repellendus corrupti illum eum eaque
+        voluptatem veritatis dolores libero aspernatur suscipit consectetur laboriosam labore voluptatibus? Ipsa numquam
+        eos expedita dignissimos soluta omnis repudiandae harum commodi pariatur asperiores ipsum adipisci, qui labore
+        dolorum culpa libero quidem cum, itaque reprehenderit doloribus provident minus! Minima repudiandae et, dolore
+        dolorum ex eaque officiis nulla ratione facere enim dolor adipisci tempora cumque deleniti nihil ea accusantium
+        facilis accusamus velit voluptatem! Voluptate aperiam fuga quisquam quidem illo distinctio tempore totam
+        reprehenderit aliquid maxime perferendis amet unde, quis, iure numquam cum dolores eaque explicabo voluptatum
+        vel exercitationem sed velit. Nulla veniam vel quas laboriosam neque, sunt nisi, reiciendis architecto possimus
+        accusamus maxime at molestiae blanditiis dolorum rem iure ut minus deleniti quaerat quae quos officia qui.
+        Voluptatem animi porro rerum ex minima reiciendis, esse assumenda ipsa consequatur quos iure harum quis aut!
+        Pariatur quo, atque exercitationem natus sed non error mollitia adipisci reprehenderit, repellat eveniet aperiam
+        ex cum dolores et sit blanditiis, hic nihil commodi porro asperiores? Pariatur amet sapiente recusandae
+        deserunt, cumque facere magni provident, ducimus eveniet architecto tempore illum? Cupiditate aut autem tempora
+        corporis commodi perferendis dolores deleniti alias quasi, reiciendis et placeat iste laborum qui. Ut earum quis
+        qui excepturi at deserunt natus impedit accusamus quibusdam, magnam dolore, cumque voluptas autem tenetur minus
+        ipsa veniam corporis iure aspernatur vero! Rerum obcaecati labore nulla sit soluta, aliquam pariatur porro
+        eligendi tenetur nam aperiam iure quos doloribus quas tempora libero numquam, perspiciatis consequuntur
+        exercitationem adipisci dolorum magni expedita voluptatum rem. Perferendis aut pariatur soluta est doloribus
+        necessitatibus explicabo error natus illo earum itaque deserunt architecto ut consequatur voluptate voluptates
+        commodi enim magni consectetur accusantium, doloremque provident? Deleniti, autem veniam at sint expedita, eum
+        doloribus porro accusantium laboriosam dolorum amet laborum aliquam impedit exercitationem maxime corrupti nihil
+        facere consectetur dicta quis quas neque! Doloribus blanditiis corporis fugit, officia voluptas voluptate
+        repellat saepe necessitatibus non? Tenetur esse numquam soluta? Totam mollitia adipisci nesciunt doloribus
+        ratione unde aliquid molestiae! Aspernatur pariatur inventore cumque nulla neque quasi tempore in sit. Illo
+        adipisci, unde exercitationem suscipit voluptatibus error beatae repellendus asperiores culpa laborum
+        reprehenderit, minus commodi quod similique eos sint? Voluptatibus assumenda accusantium sunt cumque, explicabo
+        ullam itaque dolorem laboriosam atque voluptatum tenetur mollitia necessitatibus dolorum accusamus quisquam
+        beatae. Nam quas quis impedit numquam dolore molestias tenetur totam obcaecati ratione. Qui voluptatem
+        cupiditate fugit omnis nisi quia est rem perspiciatis architecto. Minima dolor corrupti deleniti nisi, quidem
+        veniam! Eius, veniam deleniti. Ipsa nam cumque cum atque voluptatibus culpa in vel at optio sed molestiae,
+        possimus eos fuga iure eum nesciunt! Hic, itaque. Rerum non itaque necessitatibus! Voluptas praesentium laborum
+        cupiditate officia, tenetur ipsam, aperiam reprehenderit delectus molestias hic itaque dolore ullam id eaque
+        ipsum quae consectetur quod. Iusto qui dicta iste facere repudiandae itaque necessitatibus, natus error
+        voluptate sint dolorem rerum mollitia illo in praesentium perferendis laboriosam ipsum soluta! Unde incidunt
+        sunt beatae, officia minima saepe quos commodi eligendi excepturi velit, accusantium, necessitatibus nisi. Nobis
+        ipsum quasi soluta laudantium atque corporis ullam assumenda mollitia odio amet possimus consectetur ipsa
+        reiciendis eaque, accusamus nihil voluptatem ipsam, fuga rem pariatur placeat aperiam velit. Nesciunt libero
+        nostrum illum praesentium recusandae minima deserunt? Obcaecati nemo iste eos consequatur minima exercitationem
+        magni temporibus unde voluptate quidem eum fugiat labore sequi, ducimus quam odit corporis. Quod ullam sequi
+        velit non voluptatibus tempore repudiandae quia et beatae ad debitis, quasi perspiciatis eaque, facere corrupti
+        vitae dignissimos aliquid itaque explicabo asperiores magni? Dignissimos sunt mollitia eos a odit. Illo nemo
+        maxime perspiciatis commodi architecto sit laborum iure? Officiis maxime aspernatur eaque rerum suscipit quod
+        animi vel fuga deserunt voluptatum mollitia facere maiores saepe odio velit, aut officia incidunt facilis minima
+        dolore dolores, tenetur dolorem! At reprehenderit quae molestias. Nihil praesentium porro eum repellendus
+        aperiam obcaecati ut, iure illum! Magni ex quaerat non architecto libero, dolorum ipsa natus! Ab totam,
+        veritatis autem quod, reiciendis ullam vel, suscipit voluptatum omnis distinctio inventore dolorem iure! Odit
+        quas ipsa assumenda nam corporis, deserunt amet minus porro facere maxime minima mollitia aspernatur ducimus
+        eaque ratione ut blanditiis ea aut nulla odio voluptate praesentium id voluptatibus. Ratione consectetur iusto
+        eaque neque? Accusamus, pariatur cumque. Rerum, sint qui molestiae dolore iste id soluta eos! Eaque
+        exercitationem modi laudantium error consequatur? Hic, accusamus quis neque aspernatur perferendis libero
+        sapiente soluta distinctio. Ullam recusandae commodi ea numquam officiis tempore a? Deserunt ratione molestias
+        similique, autem quis illum dignissimos reprehenderit sed aliquam quaerat laudantium assumenda amet ipsa quas
+        facilis, id aliquid earum? Praesentium consequuntur perferendis officiis amet labore quaerat, excepturi vero
+        iure alias dignissimos consectetur reprehenderit modi deleniti porro nostrum, quae odio quisquam dolor
+        voluptatem ea quidem! Eos, pariatur! Nam nobis, ratione deleniti consequuntur numquam omnis voluptatibus
+        reiciendis animi. Veritatis voluptatum porro, obcaecati reprehenderit enim, expedita voluptatem facere aliquid
+        aliquam numquam molestiae maxime iste quod recusandae ea sequi id sit corporis magni minus voluptas assumenda
+        necessitatibus! Eveniet impedit error, voluptatum sit inventore distinctio illo! Iusto voluptates minus eum sint
+        nisi culpa obcaecati quia odit mollitia qui. Blanditiis maiores perspiciatis sequi inventore consequuntur
+        corporis quod pariatur ex quia! Recusandae, libero eveniet possimus consequuntur perspiciatis, dolorem eligendi
+        debitis quos ipsam quam officia ut, vitae delectus minima magni sint itaque alias deleniti! Cum reiciendis
+        tenetur nihil maxime possimus itaque vitae architecto eum atque dolorum, ullam assumenda hic impedit est
+        temporibus corrupti consequatur ab quos quis quam. Ipsum, sint. Autem architecto perspiciatis omnis quidem,
+        quaerat nostrum modi odio at atque minima tempore non debitis labore, rem provident praesentium deserunt saepe
+        quasi cum? Eveniet, accusantium quas! Ad in incidunt vero! Unde fugit nesciunt aspernatur?</main>
+    <script>
+        var menuToggle = document.querySelector(".tw-public-navigation__menu-toggle");
+
+        menuToggle.addEventListener("click", openSidebar);
+
+        function openSidebar() {
+            document.querySelector(".tw-public-navigation").classList.toggle("tw-public-navigation--open");
+            document.querySelector(".tw-public-navigation__menu").classList.toggle("tw-public-navigation__menu--open");
+            document.querySelector(".tw-public-navigation__menu-toggle").classList.toggle("tw-public-navigation__menu-toggle--open");
+            document.querySelector(".tw-main").classList.toggle("tw-main--open");
+        }
+    </script>
+</body>
+
+</html>
