@@ -55,15 +55,18 @@ workflows:
   build-test-release-and-build-docs:
     jobs:
       - build
-      - deploy-docs-to-root:
+      - build-docs
           requires:
             - build
+      - deploy-docs-to-root:
+          requires:
+            - build-docs
           filters:
             branches:
               only: master
       - deploy-docs-for-branch:
           requires:
-            - build
+            - build-docs
           filters:
             branches:
               ignore:

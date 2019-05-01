@@ -41,10 +41,8 @@
   "scripts": {
     "build": "rm -rf dist && node scripts/build.js && rm -rf dist/*.js",
     "copy": "rm -rf static/assets/**/* && cp -r {dist,public}/ static/assets/",
-    "now-build": "npm run build && npm run copy && next build",
-    "now-start": "next start",
     "start": "next dev",
-    "build-docs": "next export -o docs-build",
+    "build-docs": "npm run copy && next build && next export -o docs-build",
     "deploy-docs-to-dir": "gh-pages -a -d docs-build -e",
     "deploy-docs-for-branch": "deploy-directory-on-branch-to-gh-pages -d docs-build"
   }
