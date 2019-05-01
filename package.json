@@ -43,8 +43,8 @@
     "build": "rm -rf dist && node scripts/build.js && rm -rf dist/*.js",
     "copy": "rm -rf 'static/assets/**/*' && cp -r dist/* static/assets/ && cp -r public/* static/assets/",
     "start": "next dev",
-    "build-docs": "npm run copy && next build && next export -o docs-build",
-    "deploy-docs-to-dir": "gh-pages -a -d docs-build -e && touch docs-build/.nojekyll",
+    "build-docs": "npm run copy && next build && next export -o docs-build && touch docs-build/.nojekyll",
+    "deploy-docs-to-dir": "gh-pages -a -d docs-build -e",
     "deploy-docs-for-branch": "deploy-directory-on-branch-to-gh-pages -d docs-build"
   }
 }
