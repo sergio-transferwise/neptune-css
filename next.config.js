@@ -11,6 +11,7 @@ const getPageMap = require('next-page-map')
 const pageExtensions = ['js', 'jsx', 'md', 'mdx']
 
 module.exports = withCSS(withMDX({
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/neptune-css' : '',
   pageExtensions,
   publicRuntimeConfig: {
     pageExtensions,
