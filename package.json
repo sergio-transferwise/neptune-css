@@ -43,6 +43,9 @@
     "copy": "rm -rf static/assets/**/* && cp -r {dist,public}/ static/assets/",
     "now-build": "npm run build && npm run copy && next build",
     "now-start": "next start",
-    "start": "next dev"
+    "start": "next dev",
+    "build-docs": "next export -o docs-build",
+    "deploy-docs-to-dir": "gh-pages -a -d docs-build -e",
+    "deploy-docs-for-branch": "deploy-directory-on-branch-to-gh-pages -d docs-build"
   }
 }
