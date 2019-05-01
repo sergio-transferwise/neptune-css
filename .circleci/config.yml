@@ -55,7 +55,7 @@ workflows:
   build-test-release-and-build-docs:
     jobs:
       - build
-      - build-docs
+      - build-docs:
           requires:
             - build
       - deploy-docs-to-root:
